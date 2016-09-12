@@ -1,0 +1,18 @@
+a(class='ancora' id='contato-ancora')
+section(class='contato')
+     div(class='container-768')
+          div(class='row')
+               div(class='col doze center')
+                    h2!= '<strong>Nós queremos ouvir o que você tem a dizer</strong>'
+                    form 
+                         strong!= 'Nome<br>'
+                         input(type='text' name='nome' placeholder='Sr.' class='input')
+                    form
+                         strong!= 'Email<br>'
+                         input(type='email' name='email' placeholder='bds@email.com' class='input')
+                    form
+                         strong!= 'Mensagem<br>'
+                         textarea(name='mensagem' maxlength='1500' placeholder='Alí varíeis galantes...' class='textarea')
+                    a(class='botao botao-2' id='enviar')
+                         span(class='fa fa-paper-plane icone')
+                         

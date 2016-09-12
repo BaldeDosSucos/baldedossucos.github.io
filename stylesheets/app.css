@@ -427,6 +427,18 @@ a:active,a:hover,a:link,a:visited {
     transition: all .5s
 }
 
+.botao-3 {
+    width: 80px;
+    padding: 8px;
+    margin: 0;
+    font-size: 1rem
+}
+
+.desabilitado {
+    pointer-events: none;
+    cursor: default
+}
+
 .botao-2 span:after {
     font-family: Lato,Open Sans,Roboto,sans-serif;
     content: 'Enviar';
@@ -3640,22 +3652,25 @@ header .nav button.mobile-btn--mobile-on span {
 }
 
 .comoChegar {
+    position: relative;
     height: 365px;
     overflow-x: hidden;
-    overflow-y: hidden
+    overflow-y: hidden;
+    box-shadow: 0 11px 58px 3px rgba(0,0,0,.15);
+    z-index: 2
 }
 
 .comoChegar .content {
     display: inline-block;
     width: 50%;
-    height: 365px;
+    height: 100%;
     background-image: url(../images/Como-chegar_bg.png);
     background-repeat: repeat;
     margin: 0;
     padding: 0
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1080px) {
     .comoChegar .content {
         width: 100%
     }
@@ -3669,7 +3684,7 @@ header .nav button.mobile-btn--mobile-on span {
     height: 415px
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1080px) {
     .map {
         display: none
     }
@@ -3764,4 +3779,26 @@ footer * {
     font-style: normal;
     color: #f7941d;
     font-weight: 700
+}
+
+.modal {
+    position: fixed;
+    display: block;
+    z-index: 3;
+    width: 400px;
+    height: 150px;
+    box-shadow: 0 11px 100px 3px rgba(0,0,0,.2);
+    background: #fff;
+    top: 35%;
+    right: 36.8%;
+    opacity: 0;
+    transition: .25s
+}
+
+.modal p {
+    color: #312e3f
+}
+
+.modal-on {
+    opacity: 1
 }

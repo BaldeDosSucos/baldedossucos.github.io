@@ -1,0 +1,158 @@
+header
+     overflow: auto
+     background-color: white
+     height: 80px
+     width: 100%
+     position: fixed
+     box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.15)
+     transition: 0.5s
+     top: 0
+     z-index: 999
+     overflow-y: hidden
+
+     .nav
+          margin-top: 25px
+          text-align: center
+          white-space: nowrap
+
+          .logo
+               float: left  
+               height: 50px             
+               @media only screen and (max-width: 1024px)
+                    float: none
+
+                    
+
+               .logo-img
+                    transition: 1s
+                    left: 0
+                    width: 100px
+                    margin-top: -12px
+                    margin-left: 100px
+                    float: left
+                    @media only screen and (max-width: 1024px)
+                         margin-top: -8px
+                         margin-left: 20px
+                         transition: 1s
+                         left: 0
+
+          .nav-menu
+               display: block
+               margin-right: 15%
+               margin-top: 30px
+               @media only screen and (max-width: 1024px)
+                    margin-right: 0
+
+               .li--mobile-on
+                    @media only screen and (max-width: 1024px)
+                         display: block
+                         margin-top: 50px
+                         font-size: 1.1em
+
+
+               .li--mobile-off
+                    @media only screen and (max-width: 1024px)
+                         display: none
+                         margin-top: 0
+
+
+               li
+                    display: inline-block
+                    list-style: none
+                    margin: 0 10px 0 0
+                    height: 35px
+                    transition: 1s
+                    left: 0
+
+                    a
+                         padding: 17px
+                         color: $preto
+                    span
+                         display: block
+                         background-color: $laranja
+                         margin-left: 26px
+                         width: 0px
+                         height: 6px
+                         margin-top: 4px
+                         transition: 0.2s
+                         left: 0
+                         @media only screen and (max-width: 1024px)
+                              display: none
+                    a:hover
+                         span
+                              transition: 0.3s
+                              left: 0
+                         span#home
+                              width: 45px
+                         span#conheca
+                              width: 67px
+                         span#cardapio
+                              width: 71px
+                         span#descontos
+                              width: 82px
+                         span#comoChegar
+                              width: 105px
+                         span#contato
+                              width: 62px
+
+          button.mobile-btn
+               border: none
+               background-color: transparent
+               display: block
+               position: relative
+               margin-top: -20px
+               margin-right: 20px
+               float: right
+               height: 60px
+               width: 85px
+               text-indent: -9999px
+               cursor: pointer
+               overflow: hidden
+               transition: transform 0.3s
+               transform: rotate(0deg)
+               opacity: 1
+
+               @media only screen and (min-width: 1024px)
+                    display: none
+
+               span
+                    display: block
+                    position: absolute
+                    top: 30px
+                    left: 17px
+                    right: 17px
+                    height: 7px
+                    border-radius: 5px
+                    background: $preto
+               span::before,
+               span::after
+                    position: absolute
+                    display: block
+                    left: 0
+                    width: 100%
+                    height: 7px
+                    border-radius: 5px
+                    background-color: $preto
+                    content: ""
+
+               span::before
+                    top: 18px
+
+               span::after
+                    bottom: 18px
+
+          button:focus
+                outline: none
+
+          button.mobile-btn--mobile-on
+               transition: transform 0.3s
+               transform: rotate(90deg)
+
+          button.mobile-btn--mobile-on span
+               transition: transform 0.3s
+
+.header--mobile-on
+     @media only screen and (max-width: 1024px)
+          height: 650px
+          transition: 0.30s
+          top: 0

@@ -1,0 +1,31 @@
+doctype html
+html(lang="pt-br")
+     head
+          title Balde dos Sucos | Vem de Suco!
+          link(rel="stylesheet", type="text/css", href="stylesheets/app.css")
+          link(href='https://fonts.googleapis.com/css?family=Lato:400,700,800', rel='stylesheet', type='text/css') 
+          link(href='fonts/PoetsenOne-Regular.otf', rel='stylesheet', type='text/css')         
+          link(rel='icon', type='image/ico', href='images/favicon.png')
+          meta(charset='UTF-8')
+          meta(rel='canonical' href='baldedossucos.github.io')  
+          meta(name='Description' content='Sucos deliciosos, saudáveis e refrescantes, preparados com frutas frescas sem o uso de agrotóxicos ou adubos químicos.')          
+          meta(property='og:type' content='website')
+          meta(property='og:title' content='Balde dos Sucos')
+          meta(property='og:description' content='Sucos deliciosos, saudáveis e refrescantes, preparados com frutas frescas sem o uso de agrotóxicos ou adubos químicos.')
+          meta(property='og:locale' content='pt_BR')
+          meta(property='og:url' content='https://baldedossucos.github.io/')
+          meta(property='og:site_name' content='Balde dos Sucos')
+          meta(property='og:image' content='../images/landing-page_bg.png')    
+     body
+          header(id='header')
+               include header.jade               
+          main
+               include home.jade
+               include conheca.jade
+               include cardapio.jade
+               include descontos.jade
+               include comoChegar.jade
+               include contato.jade               
+          include footer.jade     
+          include modal.jade     
+          script(src='javascript/app.min.js')          

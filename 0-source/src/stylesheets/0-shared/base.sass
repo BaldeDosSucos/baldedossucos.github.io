@@ -1,0 +1,209 @@
+//Cores
+$laranja: #fac758
+$laranja-escuro: #f7941d
+$azul: #4aabe7
+$amarelo: #f8d848
+$preto: #312e3f
+$branco: #f9f9f9
+
+//Grid
+.container
+     width: 1024px
+     margin-left: calc(calc(100% - 1024px) * 0.5)
+     display: inline-block
+     @media only screen and (max-width: 1200px)
+          width: 100%
+          margin-left: 0
+          margin-right: 0
+          width: calc(100% - 200px)
+          padding: 0 100px 0 100px
+     @media only screen and (max-width: 480px)
+          width: calc(100%)
+          padding: 0
+
+.container-768
+     width: 768px
+     margin-left: calc(calc(100% - 768px) * 0.5)
+     display: inline-block
+     @media only screen and (max-width: 1200px)
+          width: 100%
+          margin: 0
+          width: calc(100% - 200px)
+          padding: 0 100px 0 100px
+     @media only screen and (max-width: 480px)
+          width: calc(100%)
+          padding: 0
+
+.row
+     width: 100%
+     min-height: 1px
+     float: left
+.col
+     color: $branco
+     min-height: 40px
+     border-radius: 8px
+     margin-left: 2.4%
+     margin-right: 2.4%
+     display: inline-block
+     float: left
+     width: 100%
+.wrap
+     @media screen and (max-width: 1024px)
+          width: 100% !important
+.col:first-child
+     margin-left: 0px
+.col:last-child
+     margin-left: 0px
+.um
+     width: 3.93%
+.dois
+     width: 12.66%
+.tres
+     width: 21.4%
+.quatro
+     width: 30.13%
+.cinco
+     width: 38.867%
+.seis
+     width: 47.6%
+.sete
+     width: 56.333%
+.oito
+     width: 65.07%
+.nove
+     width: 73.8%
+.dez
+     width: 82.533%
+.onze
+     width: 91.27%
+.doze
+     width: 100%
+
+section
+     display: block
+     z-index: 1
+     height: 100%
+     width: 100%
+
+//Tipografia
+html, html *
+     font-family: 'Lato', 'Open Sans', 'Roboto', sans-serif
+     font-size: 16px
+     letter-spacing: 1px
+     font-size-adjust: 0.5
+     font-size: 100%
+     font-weight: normal     
+h1
+     font-size: 6rem
+h2
+     font-size: 2.25rem
+     line-height: 2.75rem
+     @media screen and (max-width: 768px)
+          font-size: 1.8rem
+h3
+     font-size: 1.5rem
+     line-height: 2.25rem
+h4
+     font-size: 1.25rem
+     line-height: 1.75rem
+h5
+     font-size: 0.75rem
+     line-height: 1.25rem
+h6
+     font-size: 0.5rem
+     line-height: 1rem
+p
+     font-size: 1rem
+     line-height: 2.8rem
+
+ul
+     list-style: none
+     margin: 0
+     padding: 0
+
+a:link, a:visited, a:hover, a:active
+     text-decoration: none
+
+strong, b, .bold
+     font-weight: bold
+
+.semibold
+     font-weight: 600
+.italic
+     font-style: oblique
+
+//Alinhamento e posicionamento
+.center
+     text-align: center
+.right
+     text-align: right
+.left
+     text-align: left
+
+.ancora
+     display: block
+     position: relative
+     visibility: hidden
+     top: -80px
+
+//Botao
+.botao
+     display: inline-block
+     border-radius: 4px
+     background-color: #EC5A29
+     border: none
+     color: white    
+     text-align: center
+     font-size: 1.15rem
+     padding: 20px
+     width: 180px     
+     cursor: pointer
+     margin-top: 20px      
+
+.botao-1
+     opacity: 1
+     background-color: $laranja-escuro   
+     transition: all 0.25s  
+
+.botao-1:hover
+     opacity: 0.8
+
+.botao-2
+     transition: all 0.5s
+
+.botao-3
+     width: 80px
+     padding: 8px
+     margin: 0
+     font-size: 1rem
+
+.desabilitado
+     pointer-events: none
+     cursor: default
+
+.botao-2 span:after
+     font-family: 'Lato', 'Open Sans', 'Roboto', sans-serif
+     content: 'Enviar'
+     position: relative
+     right: 5px
+     top: 0
+     opacity: 1
+     transition: 0.2s
+
+.botao-2:hover span:after
+     position: relative
+     right: -50px
+     opacity: 0
+     transition: 0.2s
+
+.botao-2 span:before        
+     position: relative
+     left: -50px
+     opacity: 0
+     transition: 0.2s
+
+.botao-2:hover span:before   
+     position: relative
+     left: 31.5px
+     opacity: 1
+     transition: 0.2s
