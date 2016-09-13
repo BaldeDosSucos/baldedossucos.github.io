@@ -318,6 +318,10 @@ html,html * {
     font-weight: 400
 }
 
+@font-face {
+    font-family:PoetsenOne;src:url(../fonts/PoetsenOne-Regular.otf)
+}
+
 h1 {
     font-size: 6rem
 }
@@ -380,7 +384,7 @@ a:active,a:hover,a:link,a:visited {
     font-style: oblique
 }
 
-.@font-face {    font-family: PoetsenOne;    src: url('../fonts/PoetsenOne-Regular.otf);}center {
+.center {
     text-align: center
 }
 
@@ -3318,7 +3322,8 @@ header .nav {
 
 header .nav .logo {
     float: left;
-    height: 50px
+    height: 50px;
+    font-family: PoetsenOne
 }
 
 @media only screen and (max-width:1024px) {
