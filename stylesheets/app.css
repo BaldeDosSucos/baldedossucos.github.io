@@ -380,7 +380,7 @@ a:active,a:hover,a:link,a:visited {
     font-style: oblique
 }
 
-.center {
+.@font-face {    font-family: PoetsenOne;    src: url('../fonts/PoetsenOne-Regular.otf);}center {
     text-align: center
 }
 
